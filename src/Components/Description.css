@@ -1,0 +1,25 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+}
+.Rating{
+    background-color: rgb(16, 171, 16);
+    color: white;
+    border-radius: 5px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    padding: 5px;
+    
+}
+.Description1{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
+    align-items: center;
+}
+.Description2{
+    padding: 0px 10px 0px 10px;
+    color: grey;
+}

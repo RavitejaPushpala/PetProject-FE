@@ -1,0 +1,14 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+}
+.RestaurantPage{
+    display: flex;
+}
+.RestaurantPageDiv{
+    width: 60%;
+}
+.RestaurantPageDiv img{
+    width: 100%;
+    border-radius: 10px;
+}

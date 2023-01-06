@@ -1,0 +1,25 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+}
+.Option{
+    width: 15%  ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 5px;
+}
+.Option:hover{
+    cursor: pointer;
+}
+.imglogo{
+    width: 30%;
+    margin: 5px;
+}
+.Option img{
+    width: 80%;
+    
+}
+.Option div{
+    font-size: 20px;
+}

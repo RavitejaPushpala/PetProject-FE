@@ -1,0 +1,104 @@
+{
+    "Restaurants":[
+        {
+           "id":1,
+           "name":"Paradise",
+           "description":"Biryani, Kebab, North Indian ...",
+           "Rating":4.2,
+           "quantity":15,
+           "image":"https://b.zmtcdn.com/data/pictures/chains/2/91662/0184215797f07b24d6f25621beaa38bb_o2_featured_v2.jpg",
+           "price":320,
+           "variants":[
+              {
+                 "color":"Grey",
+                 "image":"https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2F0ZXIlMjBib3R0bGV8ZW58MHx8MHx8&w=1000&q=80"
+              },
+              {
+                 "color":"Blue",
+                 "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCzbSXJvxUSmMN9JlQGMy3hVmv_GBkrFl1YQ&usqp=CAU"
+              }
+           ]
+        },
+        {
+           "id":2,
+           "name":"McDonald's",
+           "description":"Burger, Fast food, Coffee ...",
+           "Rating":4.8,
+           "image":"https://b.zmtcdn.com/data/pictures/chains/2/97262/a153257d68de3a60406ac31c98f39ccc_o2_featured_v2.jpg",
+           "price":899,
+           "variants":[
+              {
+                 "color":"Grey",
+                 "image":"https://cdn.mos.cms.futurecdn.net/k9Md6R78D8aN4tbGDRWUSE.jpg"
+              },
+              {
+                 "color":"Silver",
+                 "image":"https://i0.wp.com/www.ultimatepocket.com/wp-content/uploads/2021/12/dells-xps-13-9310-is-the-best-13-inch-notebook-you-can-buy-right-now.jpg"
+              }
+           ]
+        },
+        {
+           "id":3,
+           "name":"Karachi Bakery",
+           "description":"Bakery, Chinese, Pizza ...",
+           "Rating":4.5,
+           "image":"https://wallpaper.dog/large/20509908.jpg",
+           "price":5,
+           "variants":[
+              
+           ]
+        }
+     ],
+     "Dining":[
+      {
+         "id":1,
+         "name":"Olive Bistro & Bar",
+         "description":"Italian, European, Desserts, Beverages",
+         "Rating":4.8,
+         "quantity":15,
+         "image":"https://b.zmtcdn.com/data/pictures/6/93766/187cbc9ec9e6c40d087f2bc53a234274_featured_v2.jpg?output-format=webp",
+         "price":320,
+         "variants":[
+            {
+               "color":"Grey",
+               "image":"https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2F0ZXIlMjBib3R0bGV8ZW58MHx8MHx8&w=1000&q=80"
+            },
+            {
+               "color":"Blue",
+               "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCzbSXJvxUSmMN9JlQGMy3hVmv_GBkrFl1YQ&usqp=CAU"
+            }
+         ]
+      },
+      {
+         "id":2,
+         "name":"Prost",
+         "description":"Finger Food, Continental, Fast Food, Pizza, Burger",
+         "Rating":4.5,
+         "image":"https://b.zmtcdn.com/data/pictures/9/18356469/dbe5d356da9dce1465a8dc5fe43774e6_featured_v2.jpg?output-format=webp",
+         "price":899,
+         "variants":[
+            {
+               "color":"Grey",
+               "image":"https://cdn.mos.cms.futurecdn.net/k9Md6R78D8aN4tbGDRWUSE.jpg"
+            },
+            {
+               "color":"Silver",
+               "image":"https://i0.wp.com/www.ultimatepocket.com/wp-content/uploads/2021/12/dells-xps-13-9310-is-the-best-13-inch-notebook-you-can-buy-right-now.jpg"
+            }
+         ]
+      },
+      {
+         "id":3,
+         "name":"Exotica",
+         "description":"North Indian, Mughlai, Chinese, Kebab, Oriental, Biryani, Shake, Beverages",
+         "Rating":4.2,
+         "image":"https://b.zmtcdn.com/data/pictures/4/19347494/05334cd18889b26dbf2f01b3aa039640.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*",
+         "price":5,
+         "variants":[
+            
+         ]
+      }
+   ]
+
+
+}
