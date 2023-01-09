@@ -1,0 +1,17 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+}
+.description{
+    padding: 20px;
+    margin: auto 5px;
+    border: 1px solid black;
+}
+.description1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.description2,.description3{
+    color: rgb(127, 125, 125);
+}
