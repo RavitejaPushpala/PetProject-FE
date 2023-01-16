@@ -1,0 +1,31 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+}
+.Menu{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    margin:10px auto;
+    border: 1px solid rgb(197, 195, 195);
+    padding: 10px;
+    border-radius: 10px;
+}
+.Menu:hover{
+    box-shadow: 5px 5px rgb(211, 212, 212);
+}
+.Menu img{
+    /* width: 50%; */
+    /* height: 80%; */
+}
+.MenuChild{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.ItemDescription{
+    margin: 10px;
+}
+.btn{
+    border: none;
+}

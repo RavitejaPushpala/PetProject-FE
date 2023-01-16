@@ -1,17 +1,15 @@
 import React from 'react'
-import Option1 from './Option1';
-import Option2 from './Option2';
+import Option from './Option';
+
 import './Options.css';
 
 
 export default function Options() {
-  const clicked=()=>{
-    console.log("clicked");
-  }
+
   return (
-    <div className='Options' onClick={clicked}>
-        <Option1 />
-        <Option2 />
+    <div className='Options' >
+      <Option path='delivery' image="https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png" type="Delivery" />
+      <Option path='diningOut' image="https://b.zmtcdn.com/data/o2_assets/30fa0a844f3ba82073e5f78c65c18b371616149662.png" type="Dining Out" />
     </div>
   )
 }

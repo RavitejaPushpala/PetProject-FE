@@ -1,0 +1,18 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+}
+.Navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color:white;
+}
+
+.NavLink1{
+    width: 20%;
+}
+.logo{
+    width:100%;
+}
