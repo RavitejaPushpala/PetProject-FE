@@ -1,14 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Description from './Description'
-import Image from './Image'
-import './Restaurant.css';
+import '../Styles/Restaurant.css';
+
 
 function Restaurant(props) {
     return (
-        <Link to={'/Restaurant'} className='Restaurant'>
+
+        <Link to={'' + props.productData.id} className='Restaurant'>
             <div >
-                <Image imge={props.productData.image} />
+                <div >
+                    <img className='Image' src={props.productData.image} />
+                </div>
                 <Description productData={props.productData} />
             </div>
         </Link>

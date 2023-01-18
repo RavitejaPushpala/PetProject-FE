@@ -1,0 +1,19 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+}
+.Home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.slogan{
+    font-size: 70px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    margin: 50px;
+    text-align: center;
+    background-color: rgb(184, 181, 181);
+    padding: 100px;
+}

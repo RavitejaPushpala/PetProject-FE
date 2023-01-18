@@ -18,3 +18,8 @@
 .Restaurant:hover{
     box-shadow: 5px 5px rgb(211, 212, 212);
  }
+ .Image{
+    width: 100%;
+    border-radius: 20px;
+    height: 250px;
+}

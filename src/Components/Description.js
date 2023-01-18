@@ -1,4 +1,4 @@
-import './Description.css';
+import '../Styles/Description.css';
 
 export default function Description(props) {
     return (

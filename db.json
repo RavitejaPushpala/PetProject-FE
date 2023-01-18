@@ -1,104 +1,363 @@
 {
-    "Restaurants":[
-        {
-           "id":1,
-           "name":"Paradise",
-           "description":"Biryani, Kebab, North Indian ...",
-           "Rating":4.2,
-           "quantity":15,
-           "image":"https://b.zmtcdn.com/data/pictures/chains/2/91662/0184215797f07b24d6f25621beaa38bb_o2_featured_v2.jpg",
-           "price":320,
-           "variants":[
-              {
-                 "color":"Grey",
-                 "image":"https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2F0ZXIlMjBib3R0bGV8ZW58MHx8MHx8&w=1000&q=80"
-              },
-              {
-                 "color":"Blue",
-                 "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCzbSXJvxUSmMN9JlQGMy3hVmv_GBkrFl1YQ&usqp=CAU"
-              }
-           ]
-        },
-        {
-           "id":2,
-           "name":"McDonald's",
-           "description":"Burger, Fast food, Coffee ...",
-           "Rating":4.8,
-           "image":"https://b.zmtcdn.com/data/pictures/chains/2/97262/a153257d68de3a60406ac31c98f39ccc_o2_featured_v2.jpg",
-           "price":899,
-           "variants":[
-              {
-                 "color":"Grey",
-                 "image":"https://cdn.mos.cms.futurecdn.net/k9Md6R78D8aN4tbGDRWUSE.jpg"
-              },
-              {
-                 "color":"Silver",
-                 "image":"https://i0.wp.com/www.ultimatepocket.com/wp-content/uploads/2021/12/dells-xps-13-9310-is-the-best-13-inch-notebook-you-can-buy-right-now.jpg"
-              }
-           ]
-        },
-        {
-           "id":3,
-           "name":"Karachi Bakery",
-           "description":"Bakery, Chinese, Pizza ...",
-           "Rating":4.5,
-           "image":"https://wallpaper.dog/large/20509908.jpg",
-           "price":5,
-           "variants":[
-              
-           ]
-        }
-     ],
-     "Dining":[
+   "Delivery": [
       {
-         "id":1,
-         "name":"Olive Bistro & Bar",
-         "description":"Italian, European, Desserts, Beverages",
-         "Rating":4.8,
-         "quantity":15,
-         "image":"https://b.zmtcdn.com/data/pictures/6/93766/187cbc9ec9e6c40d087f2bc53a234274_featured_v2.jpg?output-format=webp",
-         "price":320,
-         "variants":[
+         "id": 1,
+         "name": "Paradise",
+         "description": "Biryani, Kebab, North Indian ...",
+         "Rating": 4.2,
+         "image": "https://b.zmtcdn.com/data/pictures/chains/2/91662/0184215797f07b24d6f25621beaa38bb_o2_featured_v2.jpg",
+         "Menu": [
             {
-               "color":"Grey",
-               "image":"https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2F0ZXIlMjBib3R0bGV8ZW58MHx8MHx8&w=1000&q=80"
+               "id": 1,
+               "name": "Paneer Tikka Kebab",
+               "Rating": 4.1,
+               "Price": 329,
+               "image": "https://b.zmtcdn.com/data/dish_photos/2a1/50c5a833704c84c2d1751c9387a352a1.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
             },
             {
-               "color":"Blue",
-               "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCzbSXJvxUSmMN9JlQGMy3hVmv_GBkrFl1YQ&usqp=CAU"
+               "id": 2,
+               "name": "Chicken Tikka Kebab",
+               "Rating": 4.0,
+               "Price": 369,
+               "image": "https://b.zmtcdn.com/data/dish_photos/99c/575b8fb1c1b506a991a91cf60192b99c.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Mexican"
+            },
+            {
+               "id": 3,
+               "name": "Royal Chicken Dum Biryani (Serves 1)",
+               "Rating": 3.8,
+               "Price": 199,
+               "image": "https://b.zmtcdn.com/data/dish_photos/4c9/54547d263f7704da1a8f85f5c84104c9.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Indian"
+            },
+            {
+               "id": 1,
+               "name": "Paneer Tikka Kebab",
+               "Rating": 4.1,
+               "Price": 329,
+               "image": "https://b.zmtcdn.com/data/dish_photos/2a1/50c5a833704c84c2d1751c9387a352a1.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
+            },
+            {
+               "id": 2,
+               "name": "Chicken Tikka Kebab",
+               "Rating": 4.0,
+               "Price": 369,
+               "image": "https://b.zmtcdn.com/data/dish_photos/99c/575b8fb1c1b506a991a91cf60192b99c.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Mexican"
+            },
+            {
+               "id": 3,
+               "name": "Royal Chicken Dum Biryani (Serves 1)",
+               "Rating": 3.8,
+               "Price": 199,
+               "image": "https://b.zmtcdn.com/data/dish_photos/4c9/54547d263f7704da1a8f85f5c84104c9.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Indian"
             }
          ]
       },
       {
-         "id":2,
-         "name":"Prost",
-         "description":"Finger Food, Continental, Fast Food, Pizza, Burger",
-         "Rating":4.5,
-         "image":"https://b.zmtcdn.com/data/pictures/9/18356469/dbe5d356da9dce1465a8dc5fe43774e6_featured_v2.jpg?output-format=webp",
-         "price":899,
-         "variants":[
+         "id": 2,
+         "name": "McDonald's",
+         "description": "Burger, Fast food, Coffee ...",
+         "Rating": 4.8,
+         "image": "https://b.zmtcdn.com/data/pictures/chains/2/97262/a153257d68de3a60406ac31c98f39ccc_o2_featured_v2.jpg",
+         "Menu": [
             {
-               "color":"Grey",
-               "image":"https://cdn.mos.cms.futurecdn.net/k9Md6R78D8aN4tbGDRWUSE.jpg"
+               "id": 1,
+               "name": "McSpicy Fried Chicken 5 Pcs + 2 Coke",
+               "Rating": 4.5,
+               "Price": 533,
+               "image": "https://b.zmtcdn.com/data/dish_photos/cf5/f57c3c7f60cddb57e2a9eebb9a237cf5.png?fit=around|130:130&crop=130:130;*,*",
+               "type":"Turkish"
             },
             {
-               "color":"Silver",
-               "image":"https://i0.wp.com/www.ultimatepocket.com/wp-content/uploads/2021/12/dells-xps-13-9310-is-the-best-13-inch-notebook-you-can-buy-right-now.jpg"
+               "id": 2,
+               "name": "Chicken Big Mac",
+               "Rating": 4.3,
+               "Price": 235,
+               "image": "https://b.zmtcdn.com/data/dish_photos/291/67142f8c50711d1969f7c08595108291.png?fit=around|130:130&crop=130:130;*,*",
+               "type":"Indian"
+            },
+            {
+               "id": 3,
+               "name": "McSpicy Fried Chicken - One Pc",
+               "Rating": 4.0,
+               "Price": 120,
+               "image": "https://b.zmtcdn.com/data/dish_photos/ef0/4d800ee0a1947f576474f2d64a758ef0.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
+            },
+            {
+               "id": 1,
+               "name": "McSpicy Fried Chicken 5 Pcs + 2 Coke",
+               "Rating": 4.5,
+               "Price": 533,
+               "image": "https://b.zmtcdn.com/data/dish_photos/cf5/f57c3c7f60cddb57e2a9eebb9a237cf5.png?fit=around|130:130&crop=130:130;*,*",
+               "type":"Turkish"
+            },
+            {
+               "id": 2,
+               "name": "Chicken Big Mac",
+               "Rating": 4.3,
+               "Price": 235,
+               "image": "https://b.zmtcdn.com/data/dish_photos/291/67142f8c50711d1969f7c08595108291.png?fit=around|130:130&crop=130:130;*,*",
+               "type":"Indian"
+            },
+            {
+               "id": 3,
+               "name": "McSpicy Fried Chicken - One Pc",
+               "Rating": 4.0,
+               "Price": 120,
+               "image": "https://b.zmtcdn.com/data/dish_photos/ef0/4d800ee0a1947f576474f2d64a758ef0.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
             }
          ]
       },
       {
-         "id":3,
-         "name":"Exotica",
-         "description":"North Indian, Mughlai, Chinese, Kebab, Oriental, Biryani, Shake, Beverages",
-         "Rating":4.2,
-         "image":"https://b.zmtcdn.com/data/pictures/4/19347494/05334cd18889b26dbf2f01b3aa039640.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*",
-         "price":5,
-         "variants":[
-            
+         "id": 3,
+         "name": "Karachi Bakery",
+         "description": "Bakery, Chinese, Pizza ...",
+         "Rating": 4.5,
+         "image": "https://wallpaper.dog/large/20509908.jpg",
+         "Menu": [
+            {
+               "id": 1,
+               "name": "Chocolate Truffle Cake",
+               "Rating": 4.8,
+               "Price": 466,
+               "image": "https://b.zmtcdn.com/data/dish_photos/0df/f36463fed7e5ec2e44799741279eb0df.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Indian"
+            },
+            {
+               "id": 2,
+               "name": "Belgium Butterscotch Cake",
+               "Rating": 4.5,
+               "Price": 911,
+               "image": "https://b.zmtcdn.com/data/dish_photos/de1/53aff98772cbe65c2dcf5df226863de1.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
+            },
+            {
+               "id": 3,
+               "name": "Ajmeri Kalakand",
+               "Rating": 3.9,
+               "Price": 161,
+               "image": "https://b.zmtcdn.com/data/dish_photos/710/43e25d9f9c0b28e088b17457c994a710.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Turkish"
+            },
+            {
+               "id": 1,
+               "name": "Chocolate Truffle Cake",
+               "Rating": 4.8,
+               "Price": 466,
+               "image": "https://b.zmtcdn.com/data/dish_photos/0df/f36463fed7e5ec2e44799741279eb0df.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Indian"
+            },
+            {
+               "id": 2,
+               "name": "Belgium Butterscotch Cake",
+               "Rating": 4.5,
+               "Price": 911,
+               "image": "https://b.zmtcdn.com/data/dish_photos/de1/53aff98772cbe65c2dcf5df226863de1.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
+            },
+            {
+               "id": 3,
+               "name": "Ajmeri Kalakand",
+               "Rating": 3.9,
+               "Price": 161,
+               "image": "https://b.zmtcdn.com/data/dish_photos/710/43e25d9f9c0b28e088b17457c994a710.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Turkish"
+            }
+         ]
+      }
+   ],
+   "DiningOut": [
+      {
+         "id": 1,
+         "name": "Olive Bistro & Bar",
+         "description": "Italian, European, Desserts, Beverages",
+         "Rating": 3.9,
+         "DiningRating": 4.5,
+         "OpensAt": "12:30pm",
+         "PopularDish": "Kiwi Apple Delight",
+         "Call": "+919248912347",
+         "Location": "Jubilee Hills, Hyderabad",
+         "image": "https://b.zmtcdn.com/data/pictures/6/93766/187cbc9ec9e6c40d087f2bc53a234274_featured_v2.jpg?output-format=webp",
+         "Menu": [
+            {
+               "id": 1,
+               "name": "Spaghetti Carbonara",
+               "Rating": 4.8,
+               "Price": 490,
+               "image": "https://b.zmtcdn.com/data/dish_photos/6dd/ac959b6e18cff653c6ced3a5960016dd.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Turkish"
+            },
+            {
+               "id": 2,
+               "name": "Penne Alfredo",
+               "Rating": 4.5,
+               "Price": 480,
+               "image": "https://b.zmtcdn.com/data/dish_photos/6fd/316146eb31f391593d1e63e353cef6fd.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
+            },
+            {
+               "id": 3,
+               "name": "The Veggie Pizza",
+               "Rating": 3.9,
+               "Price": 545,
+               "image": "https://b.zmtcdn.com/data/dish_photos/bc5/a27f5c457261d3a5472c762bd267abc5.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Mexican"
+            },
+            {
+               "id": 1,
+               "name": "Spaghetti Carbonara",
+               "Rating": 4.8,
+               "Price": 490,
+               "image": "https://b.zmtcdn.com/data/dish_photos/6dd/ac959b6e18cff653c6ced3a5960016dd.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Turkish"
+            },
+            {
+               "id": 2,
+               "name": "Penne Alfredo",
+               "Rating": 4.5,
+               "Price": 480,
+               "image": "https://b.zmtcdn.com/data/dish_photos/6fd/316146eb31f391593d1e63e353cef6fd.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
+            },
+            {
+               "id": 3,
+               "name": "The Veggie Pizza",
+               "Rating": 3.9,
+               "Price": 545,
+               "image": "https://b.zmtcdn.com/data/dish_photos/bc5/a27f5c457261d3a5472c762bd267abc5.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Mexican"
+            }
+         ]
+      },
+      {
+         "id": 2,
+         "name": "Prost",
+         "description": "Finger Food, Continental, Fast Food, Pizza, Burger",
+         "Rating": 4.5,
+         "DiningRating": 4.8,
+         "OpensAt": "12noon",
+         "PopularDish": "Brewed Wheat Beer",
+         "Call": "+919100921161",
+         "Location": "Kukatpally, Hyderabad",
+         "image": "https://b.zmtcdn.com/data/pictures/9/18356469/dbe5d356da9dce1465a8dc5fe43774e6_featured_v2.jpg?output-format=webp",
+         "Menu": [
+            {
+               "id": 1,
+               "name": "Broccoli Cheese Kebab",
+               "Rating": 4.8,
+               "Price": 475,
+               "image": "https://b.zmtcdn.com/data/dish_photos/761/6275093fce6ee01ab81483322b6bd761.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Mexican"
+            },
+            {
+               "id": 2,
+               "name": "Classic F9 Joojeh Kebab",
+               "Rating": 4.5,
+               "Price": 515,
+               "image": "https://b.zmtcdn.com/data/dish_photos/d45/06b738454fa649af125ba6e1b586ad45.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
+            },
+            {
+               "id": 3,
+               "name": "Achari Chilli Paneer Tikka",
+               "Rating": 4.1,
+               "Price": 475,
+               "image": "https://b.zmtcdn.com/data/dish_photos/2f8/466e87e3e22b59f1f457afc32ab742f8.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Indian"
+            },
+            {
+               "id": 1,
+               "name": "Broccoli Cheese Kebab",
+               "Rating": 4.8,
+               "Price": 475,
+               "image": "https://b.zmtcdn.com/data/dish_photos/761/6275093fce6ee01ab81483322b6bd761.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Mexican"
+            },
+            {
+               "id": 2,
+               "name": "Classic F9 Joojeh Kebab",
+               "Rating": 4.5,
+               "Price": 515,
+               "image": "https://b.zmtcdn.com/data/dish_photos/d45/06b738454fa649af125ba6e1b586ad45.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
+            },
+            {
+               "id": 3,
+               "name": "Achari Chilli Paneer Tikka",
+               "Rating": 4.1,
+               "Price": 475,
+               "image": "https://b.zmtcdn.com/data/dish_photos/2f8/466e87e3e22b59f1f457afc32ab742f8.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Indian"
+            }
+         ]
+      },
+      {
+         "id": 3,
+         "name": "Exotica",
+         "description": "North Indian, Mughlai, Chinese, Kebab, Oriental, Biryani, Shake, Beverages",
+         "Rating": 4.2,
+         "DiningRating": 4.8,
+         "OpensAt": "12noon",
+         "PopularDish": "Dal Zafraan",
+         "Call": "+919701365500",
+         "Location": "Hitech City, Hyderabad",
+         "image": "https://b.zmtcdn.com/data/pictures/4/19347494/05334cd18889b26dbf2f01b3aa039640.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*",
+         "Menu": [
+            {
+               "id": 1,
+               "name": "Murgh ke Chaap",
+               "Rating": 4.2,
+               "Price": 645,
+               "image": "https://b.zmtcdn.com/data/dish_photos/608/fb3e4bc9a11a636ddd19ca3831db7608.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Indian"
+            },
+            {
+               "id": 2,
+               "name": "Paneer Tikka Mirch Wala",
+               "Rating": 4.1,
+               "Price": 329,
+               "image": "https://b.zmtcdn.com/data/dish_photos/74e/416c3bc343d7021048a0782444fc374e.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
+            },
+            {
+               "id": 3,
+               "name": "Hara Bhara Kebab",
+               "Rating": 3.8,
+               "Price": 625,
+               "image": "https://b.zmtcdn.com/data/dish_photos/e2a/c1ddf84acb8a988cdf4c77a4924e1e2a.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Mexican"
+            },
+            {
+               "id": 1,
+               "name": "Murgh ke Chaap",
+               "Rating": 4.2,
+               "Price": 645,
+               "image": "https://b.zmtcdn.com/data/dish_photos/608/fb3e4bc9a11a636ddd19ca3831db7608.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Indian"
+            },
+            {
+               "id": 2,
+               "name": "Paneer Tikka Mirch Wala",
+               "Rating": 4.1,
+               "Price": 329,
+               "image": "https://b.zmtcdn.com/data/dish_photos/74e/416c3bc343d7021048a0782444fc374e.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
+            },
+            {
+               "id": 3,
+               "name": "Hara Bhara Kebab",
+               "Rating": 3.8,
+               "Price": 625,
+               "image": "https://b.zmtcdn.com/data/dish_photos/e2a/c1ddf84acb8a988cdf4c77a4924e1e2a.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Mexican"
+            }
          ]
       }
    ]
-
-
 }

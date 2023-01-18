@@ -4,23 +4,15 @@
 }
 .Navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 100px;
     background-color:white;
 }
-.NavLink{
-    color: black;
-    text-decoration: none;
-    
-}
+
 .NavLink1{
-    width: 10%;
+    width: 20%;
 }
 .logo{
     width:100%;
-}
-.SearchBar{
-    width: 40%;
-
 }

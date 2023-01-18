@@ -1,0 +1,43 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+}
+.RestaurantPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid rgb(169, 166, 166);
+    border-radius: 10px;
+}
+.card{
+    margin: 10px auto;
+}
+.Menues{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgb(169, 166, 166);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.menuh1{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.RestaurantCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Description{
+    
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid rgb(190, 188, 188);
+    border-radius: 10px;
+}
+.Descriptionn{
+    width: 50%;
+}

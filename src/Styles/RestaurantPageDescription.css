@@ -1,0 +1,9 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+}
+.RestaurantPageDescription{
+    border: 1px solid rgb(169, 166, 166);
+    border-radius: 10px;
+    padding: 30px 0px 30px 200px;
+}

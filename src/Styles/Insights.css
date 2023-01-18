@@ -1,0 +1,10 @@
+.chart{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}
+.cuisines{
+    font-size: 50px;
+    font-family: sans-serif;
+    text-align: center;
+}
