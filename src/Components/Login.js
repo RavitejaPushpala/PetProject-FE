@@ -1,15 +1,21 @@
 import React from 'react'
 import { useFormik } from 'formik'
-import './LoginSignup.css';
+import '../Styles/LoginSignup.css';
+
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebase';
-import { useState} from 'react';
+import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router';
 import { useRecoilState, useRecoilValue } from 'recoil';
-import UserDetails from '../recoils/UserDetails';
+import CartState from '../recoils/CartState';
+import { myContext } from '../App';
+import CuisineStats from '../recoils/CuisineStats';
 
 export default function Login() {
- 
+  const [cart, setCart] = useRecoilState(CartState);
+  const [cuisine, setCuisine] = useRecoilState(CuisineStats);
+
+  const [userName, setUserName] = useContext(myContext);
   const navigate = useNavigate();
   const initialValues = {
     mail: '',
@@ -21,7 +27,9 @@ export default function Login() {
     setsubmitButtonDisabled(true);
     signInWithEmailAndPassword(auth, values.mail, values.pwd).then((res) => {
       setsubmitButtonDisabled(false);
-      localStorage.setItem('token',values.mail);
+      localStorage.setItem('token', values.mail);
+      setCuisine(JSON.parse(localStorage.getItem('cuisine' + values.mail)));
+      setCart(JSON.parse(localStorage.getItem('' + values.mail)));
       navigate('/home/delivery');
     }).catch((err) => {
       formik.errors.msg = err.message;

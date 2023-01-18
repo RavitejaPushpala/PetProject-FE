@@ -2,8 +2,7 @@ import React from 'react'
 import CartState from '../recoils/CartState';
 import { useRecoilState } from 'recoil';
 import { useState } from 'react';
-import './Cart.css';
-
+import '../Styles/Cart.css';
 const update = (items, idx, item) => {
     if (item.inCartQuantity === 0) {
         return [...items.slice(0, idx), ...items.slice(idx + 1)]
@@ -13,7 +12,6 @@ const update = (items, idx, item) => {
 }
 
 function AddToCart(props) {
-    console.log(props);
     const [itemsInCart, setItemsInCart] = useRecoilState(CartState);
     const [state, setstate] = useState(true);
     const idx = itemsInCart.findIndex((item) => (item.name === props.productData.name) && (item.RestaurantName === props.RestaurantData.name))
@@ -28,6 +26,7 @@ function AddToCart(props) {
             else {
                 newCart = [...itemsInCart.slice(0, idx), { ...itemInCart, inCartQuantity: itemInCart.inCartQuantity + 1 }, ...itemsInCart.slice(idx + 1)]
                 setItemsInCart(newCart)
+                localStorage.setItem(localStorage.getItem('token'), JSON.stringify(newCart));
             }
 
         } else {
@@ -39,8 +38,10 @@ function AddToCart(props) {
                 inCartQuantity: 1,
                 price: props.productData.Price,
                 RestaurantName: props.RestaurantData.name,
+                type: props.productData.type,
             }]
             setItemsInCart(newCart)
+            localStorage.setItem(localStorage.getItem('token'), JSON.stringify(newCart));
         }
 
     }
@@ -51,8 +52,8 @@ function AddToCart(props) {
             inCartQuantity: itemInCart.inCartQuantity - 1
         })
         setItemsInCart(newCart)
+        localStorage.setItem(localStorage.getItem('token'), JSON.stringify(newCart));
     }
-    console.log(itemsInCart);
     if (itemInCart) {
         return (
             <div className='AddToCart'>

@@ -12,42 +12,48 @@
                "name": "Paneer Tikka Kebab",
                "Rating": 4.1,
                "Price": 329,
-               "image": "https://b.zmtcdn.com/data/dish_photos/2a1/50c5a833704c84c2d1751c9387a352a1.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/2a1/50c5a833704c84c2d1751c9387a352a1.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
             },
             {
                "id": 2,
                "name": "Chicken Tikka Kebab",
                "Rating": 4.0,
                "Price": 369,
-               "image": "https://b.zmtcdn.com/data/dish_photos/99c/575b8fb1c1b506a991a91cf60192b99c.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/99c/575b8fb1c1b506a991a91cf60192b99c.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Mexican"
             },
             {
                "id": 3,
                "name": "Royal Chicken Dum Biryani (Serves 1)",
                "Rating": 3.8,
                "Price": 199,
-               "image": "https://b.zmtcdn.com/data/dish_photos/4c9/54547d263f7704da1a8f85f5c84104c9.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/4c9/54547d263f7704da1a8f85f5c84104c9.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Indian"
             },
             {
                "id": 1,
                "name": "Paneer Tikka Kebab",
                "Rating": 4.1,
                "Price": 329,
-               "image": "https://b.zmtcdn.com/data/dish_photos/2a1/50c5a833704c84c2d1751c9387a352a1.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/2a1/50c5a833704c84c2d1751c9387a352a1.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
             },
             {
                "id": 2,
                "name": "Chicken Tikka Kebab",
                "Rating": 4.0,
                "Price": 369,
-               "image": "https://b.zmtcdn.com/data/dish_photos/99c/575b8fb1c1b506a991a91cf60192b99c.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/99c/575b8fb1c1b506a991a91cf60192b99c.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Mexican"
             },
             {
                "id": 3,
                "name": "Royal Chicken Dum Biryani (Serves 1)",
                "Rating": 3.8,
                "Price": 199,
-               "image": "https://b.zmtcdn.com/data/dish_photos/4c9/54547d263f7704da1a8f85f5c84104c9.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/4c9/54547d263f7704da1a8f85f5c84104c9.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Indian"
             }
          ]
       },
@@ -63,42 +69,48 @@
                "name": "McSpicy Fried Chicken 5 Pcs + 2 Coke",
                "Rating": 4.5,
                "Price": 533,
-               "image": "https://b.zmtcdn.com/data/dish_photos/cf5/f57c3c7f60cddb57e2a9eebb9a237cf5.png?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/cf5/f57c3c7f60cddb57e2a9eebb9a237cf5.png?fit=around|130:130&crop=130:130;*,*",
+               "type":"Turkish"
             },
             {
                "id": 2,
                "name": "Chicken Big Mac",
                "Rating": 4.3,
                "Price": 235,
-               "image": "https://b.zmtcdn.com/data/dish_photos/291/67142f8c50711d1969f7c08595108291.png?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/291/67142f8c50711d1969f7c08595108291.png?fit=around|130:130&crop=130:130;*,*",
+               "type":"Indian"
             },
             {
                "id": 3,
                "name": "McSpicy Fried Chicken - One Pc",
                "Rating": 4.0,
                "Price": 120,
-               "image": "https://b.zmtcdn.com/data/dish_photos/ef0/4d800ee0a1947f576474f2d64a758ef0.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/ef0/4d800ee0a1947f576474f2d64a758ef0.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
             },
             {
                "id": 1,
                "name": "McSpicy Fried Chicken 5 Pcs + 2 Coke",
                "Rating": 4.5,
                "Price": 533,
-               "image": "https://b.zmtcdn.com/data/dish_photos/cf5/f57c3c7f60cddb57e2a9eebb9a237cf5.png?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/cf5/f57c3c7f60cddb57e2a9eebb9a237cf5.png?fit=around|130:130&crop=130:130;*,*",
+               "type":"Turkish"
             },
             {
                "id": 2,
                "name": "Chicken Big Mac",
                "Rating": 4.3,
                "Price": 235,
-               "image": "https://b.zmtcdn.com/data/dish_photos/291/67142f8c50711d1969f7c08595108291.png?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/291/67142f8c50711d1969f7c08595108291.png?fit=around|130:130&crop=130:130;*,*",
+               "type":"Indian"
             },
             {
                "id": 3,
                "name": "McSpicy Fried Chicken - One Pc",
                "Rating": 4.0,
                "Price": 120,
-               "image": "https://b.zmtcdn.com/data/dish_photos/ef0/4d800ee0a1947f576474f2d64a758ef0.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/ef0/4d800ee0a1947f576474f2d64a758ef0.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
             }
          ]
       },
@@ -114,42 +126,48 @@
                "name": "Chocolate Truffle Cake",
                "Rating": 4.8,
                "Price": 466,
-               "image": "https://b.zmtcdn.com/data/dish_photos/0df/f36463fed7e5ec2e44799741279eb0df.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/0df/f36463fed7e5ec2e44799741279eb0df.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Indian"
             },
             {
                "id": 2,
                "name": "Belgium Butterscotch Cake",
                "Rating": 4.5,
                "Price": 911,
-               "image": "https://b.zmtcdn.com/data/dish_photos/de1/53aff98772cbe65c2dcf5df226863de1.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/de1/53aff98772cbe65c2dcf5df226863de1.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
             },
             {
                "id": 3,
                "name": "Ajmeri Kalakand",
                "Rating": 3.9,
                "Price": 161,
-               "image": "https://b.zmtcdn.com/data/dish_photos/710/43e25d9f9c0b28e088b17457c994a710.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/710/43e25d9f9c0b28e088b17457c994a710.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Turkish"
             },
             {
                "id": 1,
                "name": "Chocolate Truffle Cake",
                "Rating": 4.8,
                "Price": 466,
-               "image": "https://b.zmtcdn.com/data/dish_photos/0df/f36463fed7e5ec2e44799741279eb0df.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/0df/f36463fed7e5ec2e44799741279eb0df.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Indian"
             },
             {
                "id": 2,
                "name": "Belgium Butterscotch Cake",
                "Rating": 4.5,
                "Price": 911,
-               "image": "https://b.zmtcdn.com/data/dish_photos/de1/53aff98772cbe65c2dcf5df226863de1.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/de1/53aff98772cbe65c2dcf5df226863de1.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
             },
             {
                "id": 3,
                "name": "Ajmeri Kalakand",
                "Rating": 3.9,
                "Price": 161,
-               "image": "https://b.zmtcdn.com/data/dish_photos/710/43e25d9f9c0b28e088b17457c994a710.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/710/43e25d9f9c0b28e088b17457c994a710.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Turkish"
             }
          ]
       }
@@ -172,42 +190,48 @@
                "name": "Spaghetti Carbonara",
                "Rating": 4.8,
                "Price": 490,
-               "image": "https://b.zmtcdn.com/data/dish_photos/6dd/ac959b6e18cff653c6ced3a5960016dd.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/6dd/ac959b6e18cff653c6ced3a5960016dd.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Turkish"
             },
             {
                "id": 2,
                "name": "Penne Alfredo",
                "Rating": 4.5,
                "Price": 480,
-               "image": "https://b.zmtcdn.com/data/dish_photos/6fd/316146eb31f391593d1e63e353cef6fd.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/6fd/316146eb31f391593d1e63e353cef6fd.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
             },
             {
                "id": 3,
                "name": "The Veggie Pizza",
                "Rating": 3.9,
                "Price": 545,
-               "image": "https://b.zmtcdn.com/data/dish_photos/bc5/a27f5c457261d3a5472c762bd267abc5.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/bc5/a27f5c457261d3a5472c762bd267abc5.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Mexican"
             },
             {
                "id": 1,
                "name": "Spaghetti Carbonara",
                "Rating": 4.8,
                "Price": 490,
-               "image": "https://b.zmtcdn.com/data/dish_photos/6dd/ac959b6e18cff653c6ced3a5960016dd.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/6dd/ac959b6e18cff653c6ced3a5960016dd.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Turkish"
             },
             {
                "id": 2,
                "name": "Penne Alfredo",
                "Rating": 4.5,
                "Price": 480,
-               "image": "https://b.zmtcdn.com/data/dish_photos/6fd/316146eb31f391593d1e63e353cef6fd.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/6fd/316146eb31f391593d1e63e353cef6fd.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
             },
             {
                "id": 3,
                "name": "The Veggie Pizza",
                "Rating": 3.9,
                "Price": 545,
-               "image": "https://b.zmtcdn.com/data/dish_photos/bc5/a27f5c457261d3a5472c762bd267abc5.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/bc5/a27f5c457261d3a5472c762bd267abc5.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Mexican"
             }
          ]
       },
@@ -228,42 +252,48 @@
                "name": "Broccoli Cheese Kebab",
                "Rating": 4.8,
                "Price": 475,
-               "image": "https://b.zmtcdn.com/data/dish_photos/761/6275093fce6ee01ab81483322b6bd761.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/761/6275093fce6ee01ab81483322b6bd761.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Mexican"
             },
             {
                "id": 2,
                "name": "Classic F9 Joojeh Kebab",
                "Rating": 4.5,
                "Price": 515,
-               "image": "https://b.zmtcdn.com/data/dish_photos/d45/06b738454fa649af125ba6e1b586ad45.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/d45/06b738454fa649af125ba6e1b586ad45.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
             },
             {
                "id": 3,
                "name": "Achari Chilli Paneer Tikka",
                "Rating": 4.1,
                "Price": 475,
-               "image": "https://b.zmtcdn.com/data/dish_photos/2f8/466e87e3e22b59f1f457afc32ab742f8.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/2f8/466e87e3e22b59f1f457afc32ab742f8.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Indian"
             },
             {
                "id": 1,
                "name": "Broccoli Cheese Kebab",
                "Rating": 4.8,
                "Price": 475,
-               "image": "https://b.zmtcdn.com/data/dish_photos/761/6275093fce6ee01ab81483322b6bd761.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/761/6275093fce6ee01ab81483322b6bd761.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Mexican"
             },
             {
                "id": 2,
                "name": "Classic F9 Joojeh Kebab",
                "Rating": 4.5,
                "Price": 515,
-               "image": "https://b.zmtcdn.com/data/dish_photos/d45/06b738454fa649af125ba6e1b586ad45.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/d45/06b738454fa649af125ba6e1b586ad45.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
             },
             {
                "id": 3,
                "name": "Achari Chilli Paneer Tikka",
                "Rating": 4.1,
                "Price": 475,
-               "image": "https://b.zmtcdn.com/data/dish_photos/2f8/466e87e3e22b59f1f457afc32ab742f8.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/2f8/466e87e3e22b59f1f457afc32ab742f8.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Indian"
             }
          ]
       },
@@ -284,42 +314,48 @@
                "name": "Murgh ke Chaap",
                "Rating": 4.2,
                "Price": 645,
-               "image": "https://b.zmtcdn.com/data/dish_photos/608/fb3e4bc9a11a636ddd19ca3831db7608.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/608/fb3e4bc9a11a636ddd19ca3831db7608.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Indian"
             },
             {
                "id": 2,
                "name": "Paneer Tikka Mirch Wala",
                "Rating": 4.1,
                "Price": 329,
-               "image": "https://b.zmtcdn.com/data/dish_photos/74e/416c3bc343d7021048a0782444fc374e.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/74e/416c3bc343d7021048a0782444fc374e.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
             },
             {
                "id": 3,
                "name": "Hara Bhara Kebab",
                "Rating": 3.8,
                "Price": 625,
-               "image": "https://b.zmtcdn.com/data/dish_photos/e2a/c1ddf84acb8a988cdf4c77a4924e1e2a.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/e2a/c1ddf84acb8a988cdf4c77a4924e1e2a.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Mexican"
             },
             {
                "id": 1,
                "name": "Murgh ke Chaap",
                "Rating": 4.2,
                "Price": 645,
-               "image": "https://b.zmtcdn.com/data/dish_photos/608/fb3e4bc9a11a636ddd19ca3831db7608.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/608/fb3e4bc9a11a636ddd19ca3831db7608.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Indian"
             },
             {
                "id": 2,
                "name": "Paneer Tikka Mirch Wala",
                "Rating": 4.1,
                "Price": 329,
-               "image": "https://b.zmtcdn.com/data/dish_photos/74e/416c3bc343d7021048a0782444fc374e.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/74e/416c3bc343d7021048a0782444fc374e.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Chinese"
             },
             {
                "id": 3,
                "name": "Hara Bhara Kebab",
                "Rating": 3.8,
                "Price": 625,
-               "image": "https://b.zmtcdn.com/data/dish_photos/e2a/c1ddf84acb8a988cdf4c77a4924e1e2a.jpg?fit=around|130:130&crop=130:130;*,*"
+               "image": "https://b.zmtcdn.com/data/dish_photos/e2a/c1ddf84acb8a988cdf4c77a4924e1e2a.jpg?fit=around|130:130&crop=130:130;*,*",
+               "type":"Mexican"
             }
          ]
       }

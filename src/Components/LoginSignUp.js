@@ -5,14 +5,14 @@ import { useState } from 'react';
 import Header from './Header';
 export default function LoginSignUp() {
   const [state, setstate] = useState(false);
-  
+
   return (
     <div>
       <Header />
       <div className='signUpLogin'>
         <div className='loginSignupBtns'>
-        <button onClick={()=>{setstate(true)}}>Login</button>
-        <button onClick={()=>{setstate(false)}}>Signin</button>
+          <button onClick={() => { setstate(true) }}>Login</button>
+          <button onClick={() => { setstate(false) }}>SignUp</button>
         </div>
         {state && <Login />}
         {!state && <Signup />}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from 'antd';
-import './RestaurantPage.css';
+import '../Styles/RestaurantPage.css';
 
 const { Meta } = Card;
 

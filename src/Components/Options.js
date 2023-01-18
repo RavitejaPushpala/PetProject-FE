@@ -1,7 +1,7 @@
 import React from 'react'
 import Option from './Option';
 
-import './Options.css';
+import '../Styles/Options.css';
 
 
 export default function Options() {

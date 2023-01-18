@@ -1,5 +1,6 @@
 import React from 'react'
-import './RestaurantPage.css';
+import '../Styles/RestaurantPage.css';
+
 import RestaurantCard from './RestaurantCard';
 import Menu from './Menu';
 import Navbar from './Navbar';
@@ -18,7 +19,6 @@ export default function RestaurantPage() {
   if (isError) {
     return <h2>{error.message}</h2>
   }
-  console.log(data.data.Menu);
   return (
     <>
       <Navbar />
@@ -26,9 +26,9 @@ export default function RestaurantPage() {
         <RestaurantCard FoodData={data.data} />
 
       </div>
-      
-      {(type==='diningOut') && <h1 className='menuh1'>Restaurant Details</h1>}
-      {(type==='diningOut') && <RestaurantPageDescription FoodData={data.data}/>}
+
+      {(type === 'diningOut') && <h1 className='menuh1'>Restaurant Details</h1>}
+      {(type === 'diningOut') && <RestaurantPageDescription FoodData={data.data} />}
       <h1 className='menuh1'>MENU</h1>
       <div className='Menues'>
         {

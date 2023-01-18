@@ -14,10 +14,7 @@
 .Menu:hover{
     box-shadow: 5px 5px rgb(211, 212, 212);
 }
-.Menu img{
-    /* width: 50%; */
-    /* height: 80%; */
-}
+
 .MenuChild{
     display: flex;
     flex-direction: column;

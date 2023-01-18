@@ -1,14 +1,16 @@
 import React from 'react'
 import Restaurant from './Restaurant'
-import './Delivery.css';
+import '../Styles/Delivery.css';
+
 import useRestaurantsData from '../Hooks/useRestaurantsData';
 import { useRecoilValue } from 'recoil';
-import UserDetails from '../recoils/UserDetails';
-
+import UserDetails from '../recoils/CuisineStats';
+import { useContext } from 'react';
+import { myContext } from '../App';
 export default function Delivery() {
+    const [userName, setUserName] = useContext(myContext);
     const { isLoading, data, isError, error } = useRestaurantsData();
     const user = useRecoilValue(UserDetails);
-    console.log(user);
     if (isLoading) {
         return <h2>Loading ...</h2>
     }

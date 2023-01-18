@@ -1,6 +1,7 @@
 import React from 'react'
 import Restaurant from './Restaurant'
-import './Delivery.css';
+import '../Styles/Delivery.css';
+
 import useDiningData from '../Hooks/useDiningData';
 
 export default function DiningOut() {

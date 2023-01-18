@@ -1,6 +1,7 @@
 import React from 'react'
-import './Option.css';
-import { NavLink} from 'react-router-dom';
+import '../Styles/Option.css';
+
+import { NavLink } from 'react-router-dom';
 
 export default function Option(props) {
 

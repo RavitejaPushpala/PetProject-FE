@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Description from './Description'
-import './Restaurant.css';
+import '../Styles/Restaurant.css';
 
 
 function Restaurant(props) {

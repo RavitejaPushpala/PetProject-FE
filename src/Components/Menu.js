@@ -1,6 +1,6 @@
 import React from 'react'
 import AddToCart from './AddToCart';
-import './Menu.css';
+import '../Styles/Menu.css';
 
 export default function Menu(props) {
   return (

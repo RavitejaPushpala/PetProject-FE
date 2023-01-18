@@ -29,19 +29,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: 100px; */
-    /* height: 500px; */
-    /* width: 100%; */
 }
 .loginSignup form div{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
-    /* background-color: black; */
 }
 form{
-    /* background-color: antiquewhite; */
     width: 100%;
 }
 input{
@@ -59,7 +53,7 @@ input{
     border-radius: 10px;
 }
 
-.lsbtn :hover{
+.lsbtn:hover{
     cursor: pointer;
 }
 .errors{

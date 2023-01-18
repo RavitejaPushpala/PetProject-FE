@@ -1,12 +1,20 @@
 import React from 'react'
 import { useFormik } from 'formik'
-import './LoginSignup.css';
+import '../Styles/LoginSignup.css';
+
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { auth } from '../firebase';
-import { useState } from 'react';
+import { useState,useContext } from 'react';
 import { useNavigate } from 'react-router';
+import { useRecoilState } from 'recoil';
+import CartState from '../recoils/CartState';
+import CuisineStats from '../recoils/CuisineStats';
+import { myContext } from '../App';
 export default function Signup() {
-    const navigate=useNavigate();
+    const [cart, setCart] = useRecoilState(CartState);
+    const [cuisine, setCuisine] = useRecoilState(CuisineStats);
+    const [userName, setUserName] = useContext(myContext);
+    const navigate = useNavigate();
     const initialValues = {
         uname: '',
         pwd: '',
@@ -18,11 +26,16 @@ export default function Signup() {
     const onSubmit = values => {
         setsubmitButtonDisabled(true);
         createUserWithEmailAndPassword(auth, values.mail, values.pwd).then((res) => {
-            localStorage.setItem('token',values.mail);
+            localStorage.setItem('token', values.mail);
+            localStorage.setItem('' + values.mail, JSON.stringify([]));
+            localStorage.setItem('cuisine' + values.mail, JSON.stringify([0,0,0,0]));
+            setCart([]);
+            setCuisine([0,0,0,0]);
+            setUserName(values.uname);
             setsubmitButtonDisabled(false);
-            const user=res.user;
-             updateProfile(user,{
-                displayName:values.uname,
+            const user = res.user;
+            updateProfile(user, {
+                displayName: values.uname,
             }
             );
             navigate('/home/delivery');
