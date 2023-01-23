@@ -1,8 +1,10 @@
 import axios from 'axios'
-import {useQuery} from 'react-query'
-async function FetchData(){
-    return await axios.get('http://localhost:4001/Delivery?_sort=Rating');
+import { useQuery } from 'react-query'
+const FetchData = async () => {
+  return await axios.get('http://localhost:4001/Delivery?_sort=Rating');
 }
-export default function useRestaurantsData() {
-  return useQuery('Restaurant',async ()=>FetchData());
+const useRestaurantsData = () => {
+  return useQuery('Restaurant', async () => FetchData());
 }
+
+export default useRestaurantsData

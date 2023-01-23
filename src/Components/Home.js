@@ -1,15 +1,18 @@
 import React from 'react'
 import { Outlet } from 'react-router';
-import Navbar from './Navbar';
-import Options from './Options'
 import '../Styles/Home.css';
+import DeliveryDiningSections from './DeliveryDiningSections';
+import { useRecoilValue } from 'recoil';
+import UserDetails from '../recoils/UserDetails';
 
-export default function Home() {
+const Home = () => {
+    const userName = useRecoilValue(UserDetails);
     return (
         <div>
-            <Navbar />
-            <Options />
+            <DeliveryDiningSections />
             <Outlet />
-        </div>);
+        </div>
+    );
 }
 
+export default Home

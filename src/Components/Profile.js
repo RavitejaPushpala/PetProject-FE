@@ -1,17 +1,25 @@
 import React from 'react'
-import { myContext } from '../App';
-import Navbar from './Navbar'
-import { useContext } from 'react';
+import { useEffect } from 'react';
 import '../Styles/profile.css';
+import { useRecoilState } from 'recoil';
+import UserDetails from '../recoils/UserDetails';
+import { auth } from '../firebase';
 
-export default function Profile() {
-  const [userName, setUserName] = useContext(myContext);
+const Profile = () => {
+  const [userName, setUserName] = useRecoilState(UserDetails);
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      setUserName(user.displayName)
+    })
+  }, [])
+
   return (
     <div>
-      <Navbar />
       <div className='profile'>
         <h1>Username : {userName}</h1>
         <h1>Email : {localStorage.getItem('token')}</h1></div>
     </div>
   )
 }
+
+export default Profile

@@ -2,7 +2,7 @@ import React from 'react'
 import AddToCart from './AddToCart';
 import '../Styles/Menu.css';
 
-export default function Menu(props) {
+const Menu = (props) => {
   return (
     <div className='Menu'>
       <img src={props.FoodData.image}></img>
@@ -15,3 +15,5 @@ export default function Menu(props) {
     </div>
   )
 }
+
+export default Menu

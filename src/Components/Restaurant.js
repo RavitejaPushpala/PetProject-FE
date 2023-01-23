@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import Description from './Description'
 import '../Styles/Restaurant.css';
 
+const Restaurant = (props) => {
 
-function Restaurant(props) {
     return (
 
         <Link to={'' + props.productData.id} className='Restaurant'>
@@ -15,7 +15,6 @@ function Restaurant(props) {
                 <Description productData={props.productData} />
             </div>
         </Link>
-
     )
 }
 

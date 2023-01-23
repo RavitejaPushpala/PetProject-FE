@@ -1,19 +1,17 @@
 import '../Styles/Insights.css';
-
-import React, { Component } from 'react';
 import ReactApexChart from 'react-apexcharts';
 import { useState } from 'react';
-import Navbar from './Navbar';
 import { useRecoilValue } from 'recoil';
 import CuisineStats from '../recoils/CuisineStats';
+
 const Insights = () => {
     const cuisines = useRecoilValue(CuisineStats);
-    const [options, setOptions] = useState({
+    const Default = {
         chart: {
             width: 380,
             type: 'pie',
         },
-        labels: ['Indian', 'Chinese', 'Mexican', 'Turkish'],
+        labels: Object.keys(cuisines),
         responsive: [{
             breakpoint: 480,
             options: {
@@ -25,26 +23,23 @@ const Insights = () => {
                 }
             }
         }]
-    });
-    const [series, setSeries] = useState(cuisines);
-    let x = 0;
-    for (let i = 0; i < cuisines.length; i++) x += cuisines[i];
+    };
+
+    const [options, setOptions] = useState(Default);
+    const [series, setSeries] = useState(Object.values(cuisines));
+    let x = series.length;
     return (
         <>
-            <Navbar />
-            {x===0 && <h1 className='cuisines'>No orders placed</h1> }
-            {   x!==0 &&
+            {x === 0 && <h1 className='cuisines'>No orders placed</h1>}
+            {x !== 0 &&
                 <div>
-                <h1 className='cuisines'>Cuisines ordered</h1>
-                <div className='chart' id="chart">
-                    <ReactApexChart options={options} series={series} type="pie" width={600} />
+                    <h1 className='cuisines'>Cuisines ordered</h1>
+                    <div className='chart' id="chart">
+                        <ReactApexChart options={options} series={series} type="pie" width={600} />
+                    </div>
                 </div>
-            </div>
             }
-
         </>
-
     )
-
 }
 export default Insights

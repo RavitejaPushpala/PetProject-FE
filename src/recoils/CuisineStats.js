@@ -4,7 +4,7 @@ if(localStorage.getItem('token')){
   arry=JSON.parse(localStorage.getItem('cuisine'+(localStorage.getItem('token'))));
 }
 else{
-  arry=[0,0,0,0];
+  arry={};
 }
 const CuisineStats = atom({
     key: "cuisines",
