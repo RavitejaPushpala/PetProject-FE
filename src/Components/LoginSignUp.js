@@ -1,23 +1,21 @@
 import React from 'react'
-import Login from './Login'
-import Signup from './Signup'
-import { useState } from 'react';
 import Header from './Header';
-export default function LoginSignUp() {
-  const [state, setstate] = useState(false);
+import { Link, Outlet } from 'react-router-dom';
+
+const LoginSignUp = () => {
 
   return (
     <div>
       <Header />
       <div className='signUpLogin'>
         <div className='loginSignupBtns'>
-          <button onClick={() => { setstate(true) }}>Login</button>
-          <button onClick={() => { setstate(false) }}>SignUp</button>
+          <Link to="login"><button >Login</button></Link>
+          <Link to="signup"><button >SignUp</button></Link>
         </div>
-        {state && <Login />}
-        {!state && <Signup />}
+        <Outlet />
       </div>
-
     </div>
   )
 }
+
+export default LoginSignUp

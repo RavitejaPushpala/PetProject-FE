@@ -1,20 +1,21 @@
 import React from 'react'
 import { useFormik } from 'formik'
 import '../Styles/LoginSignup.css';
-
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
-import { auth } from '../firebase';
-import { useState,useContext } from 'react';
+import { auth } from '../Firebase';
+import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import { useRecoilState } from 'recoil';
 import CartState from '../recoils/CartState';
 import CuisineStats from '../recoils/CuisineStats';
-import { myContext } from '../App';
-export default function Signup() {
+import UserDetails from '../recoils/UserDetails';
+
+const Signup = () => {
     const [cart, setCart] = useRecoilState(CartState);
     const [cuisine, setCuisine] = useRecoilState(CuisineStats);
-    const [userName, setUserName] = useContext(myContext);
+    const [userName, setUserName] = useRecoilState(UserDetails);
     const navigate = useNavigate();
+
     const initialValues = {
         uname: '',
         pwd: '',
@@ -22,15 +23,17 @@ export default function Signup() {
         pwd2: '',
         msg: ''
     };
+
     const [submitButtonDisabled, setsubmitButtonDisabled] = useState(false);
+
     const onSubmit = values => {
         setsubmitButtonDisabled(true);
         createUserWithEmailAndPassword(auth, values.mail, values.pwd).then((res) => {
             localStorage.setItem('token', values.mail);
-            localStorage.setItem('' + values.mail, JSON.stringify([]));
-            localStorage.setItem('cuisine' + values.mail, JSON.stringify([0,0,0,0]));
+            localStorage.setItem('cart' + values.mail, JSON.stringify([]));
+            localStorage.setItem('cuisine' + values.mail, JSON.stringify({}));
             setCart([]);
-            setCuisine([0,0,0,0]);
+            setCuisine({});
             setUserName(values.uname);
             setsubmitButtonDisabled(false);
             const user = res.user;
@@ -44,6 +47,7 @@ export default function Signup() {
             setsubmitButtonDisabled(false);
         })
     }
+
     const validate = values => {
         let errors = {};
         if (!values.uname) {
@@ -72,6 +76,7 @@ export default function Signup() {
         onSubmit,
         validate
     });
+
     return (
         <div className='loginSignup'>
             <form onSubmit={formik.handleSubmit}>
@@ -102,3 +107,5 @@ export default function Signup() {
         </div>
     )
 }
+
+export default Signup

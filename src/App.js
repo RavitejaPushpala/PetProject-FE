@@ -10,41 +10,39 @@ import NoMatch from './Components/NoMatch';
 import Insights from './Components/Insights';
 import { RecoilRoot } from 'recoil';
 import LoginSignUp from './Components/LoginSignUp';
-import ProtectedRoute from './Components/ProtectedRoute';
+import ProtectedRoute1 from './Components/ProtectedRoute1';
 import ProtectedRoute2 from './Components/ProtectedRoute2';
-import { useState, useEffect } from 'react';
-import { auth } from './firebase';
 import Profile from './Components/Profile';
-const myContext = React.createContext();
+import Login from './Components/Login';
+import Signup from './Components/Signup';
+import Navbar from './Components/Navbar';
 export default function App() {
-  const [user, setUser] = useState(null);
-  useEffect(() => {
-    auth.onAuthStateChanged((user) => {
-      setUser(user.displayName)
-    })
-  }, [])
+
   const queryClient = new QueryClient();
   return (
+
     <div className='page'>
       <RecoilRoot>
-        <myContext.Provider value={[user, setUser]}>
-          <QueryClientProvider client={queryClient}>
-            <Routes>
-              <Route path='/' element={<ProtectedRoute2 Component={LoginSignUp} />}></Route>
-              <Route path='/home' element={<ProtectedRoute Component={Home} />}>
-                <Route path='delivery' element={<ProtectedRoute Component={Delivery} />}></Route>
-                <Route path='diningOut' element={<ProtectedRoute Component={DiningOut} />}></Route>
-              </Route>
-              <Route path='/home/:type/:id' element={<ProtectedRoute Component={RestaurantPage} />}></Route>
-              <Route path='insights' element={<ProtectedRoute Component={Insights} />}></Route>
-              <Route path='profile' element={<ProtectedRoute Component={Profile} />}></Route>
-              <Route path='*' element={<NoMatch />}></Route>
-            </Routes>
-          </QueryClientProvider>
-        </myContext.Provider>
+        <QueryClientProvider client={queryClient}>
+          <Navbar/>
+          <Routes>
+            <Route path='/' element={<ProtectedRoute2 Component={LoginSignUp} />}>
+              <Route path='login' element={<ProtectedRoute2 Component={Login} />}></Route>
+              <Route path='signup' element={<ProtectedRoute2 Component={Signup} />}></Route>
+            </Route>
+            <Route path='/home' element={<ProtectedRoute1 Component={Home} />}>
+              <Route path='delivery' element={<ProtectedRoute1 Component={Delivery} />}></Route>
+              <Route path='diningOut' element={<ProtectedRoute1 Component={DiningOut} />}></Route>
+            </Route>
+            <Route path='/home/:type/:id' element={<ProtectedRoute1 Component={RestaurantPage} />}></Route>
+            <Route path='insights' element={<ProtectedRoute1 Component={Insights} />}></Route>
+            <Route path='profile' element={<ProtectedRoute1 Component={Profile} />}></Route>
+            <Route path='*' element={<NoMatch />}></Route>
+          </Routes>
+        </QueryClientProvider>
       </RecoilRoot>
     </div>
   );
+
 }
 
-export { myContext };

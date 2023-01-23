@@ -1,6 +1,6 @@
 import '../Styles/Description.css';
 
-export default function Description(props) {
+const Description = (props) => {
     return (
         <div className='Description'>
             <div className='Description1'>
@@ -8,7 +8,8 @@ export default function Description(props) {
                 <span className="Rating">{props.productData.Rating}★</span>
             </div>
             <div className='Description2'>{props.productData.description}</div>
-
         </div>
     )
 }
+
+export default Description

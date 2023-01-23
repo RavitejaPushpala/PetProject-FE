@@ -6,47 +6,61 @@ import CartLength from '../recoils/CartLength';
 import '../Styles/Cart.css';
 import CartState from '../recoils/CartState';
 import CuisineStats from '../recoils/CuisineStats';
+import { notification } from 'antd';
 
-export default function Cart() {
+const Cart = () => {
 
-  const [state, setstate] = useState(false);
+  const [showCart, setshowCart] = useState(false);
   const length = useRecoilValue(CartLength);
   const itemsInCart = useRecoilValue(CartState);
   const [cart, setCart] = useRecoilState(CartState);
   const [cuisine, setCuisine] = useRecoilState(CuisineStats);
+
   const toggleState = () => {
-    setstate(!state);
+    setshowCart(!showCart);
   }
+
   const placeOrder = () => {
-    let newCuisine = [0, 0, 0, 0];
+    let newCuisine = {};
+
     itemsInCart.map((product) => {
-      if (product.type === 'Indian') {
-        newCuisine[0] = newCuisine[0] + product.inCartQuantity;
-      }
-      else if (product.type === 'Chinese') {
-        newCuisine[1] = newCuisine[1] + product.inCartQuantity;
-      }
-      else if (product.type === 'Mexican') {
-        newCuisine[2] = newCuisine[2] + product.inCartQuantity;
+
+      let type = product.type;
+      if (newCuisine.hasOwnProperty(type)) {
+        newCuisine[type] += product.inCartQuantity;
       }
       else {
-        newCuisine[3] = newCuisine[3] + product.inCartQuantity;
+        newCuisine[type] = product.inCartQuantity;
+      }
+    })
+    for (const key in cuisine) {
+      if (newCuisine[key]) {
+        newCuisine[key] += cuisine[key];
+      }
+      else {
+        newCuisine[key] = cuisine[key];
       }
 
-    })
-    for (let i = 0; i < cuisine.length; i++) {
-      newCuisine[i] = newCuisine[i] + cuisine[i];
     }
     setCuisine(newCuisine);
     localStorage.setItem('cuisine' + localStorage.getItem('token'), JSON.stringify(newCuisine));
     setCart([]);
-    localStorage.setItem(localStorage.getItem('token'), JSON.stringify([]));
-    alert("Order Placed Successfully");
+    localStorage.setItem('cart' + localStorage.getItem('token'), JSON.stringify([]));
+    openNotification()
   }
+
+  const openNotification = () => {
+    notification.open({
+      message: 'Order Placed Successfully',
+      description:
+        '',
+    });
+  };
+
   return (
-    <div style={state ? {} : {}} className='CartItems'>
+    <div style={showCart ? {} : {}} className='CartItems'>
       <button className='cart' onClick={toggleState}>Cart ({length})</button>
-      {state && length > 0 && (
+      {showCart && length > 0 && (
         <div className='CartList'>
           {itemsInCart.map((product) => {
             return <CartItem product={product} />
@@ -54,9 +68,9 @@ export default function Cart() {
           <button onClick={placeOrder} className='placeOrder'>Place Order</button>
         </div>
       )}
-
     </div>
-
-
   )
+
 }
+
+export default Cart
