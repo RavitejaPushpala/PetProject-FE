@@ -2,7 +2,7 @@ import React from 'react'
 import { useFormik } from 'formik'
 import '../Styles/LoginSignup.css';
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
-import { auth } from '../firebase';
+import { auth } from '../Firebase';
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import { useRecoilState } from 'recoil';

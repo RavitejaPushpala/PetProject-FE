@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import '../Styles/profile.css';
 import { useRecoilState } from 'recoil';
 import UserDetails from '../recoils/UserDetails';
-import { auth } from '../firebase';
+import { auth } from '../Firebase';
 
 const Profile = () => {
   const [userName, setUserName] = useRecoilState(UserDetails);

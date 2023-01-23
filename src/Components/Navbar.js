@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import Cart from './Cart';
 import '../Styles/Navbar.css';
-import { auth } from '../firebase';
+import { auth } from '../Firebase';
 
 const Navbar = () => {
     const navigate = useNavigate();
